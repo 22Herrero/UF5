@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cat">
+    <head>
+        <script type="text/javascript">
+            function validar(){
+            var psswd=document.getElementById("psswd").value;
+            var confpsswd=document.getElementById("confpsswd").value;
+            if(psswd==confpsswd){
+            return true;
+            }
+            else{
+            alert("No coincideix");
+            return false;
+            }
+        }
+        </script>
+        <meta charset="UTF-8">
+        <title>Formulari d'enviament</title>
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <th bgcolor="306090">Enviar missatge<a href="img/gb_reload_s.gif"></a></th>
+            </tr>
+            <form method="GET" onsubmit="return validar();">
+            <tr>
+                <th><strong>Nom</strong><input type="text" name="Nom" required></th>
+            </tr>
+            <tr>
+                <th><strong>Usuari</strong><input type="text" name="Usuari" maxlength="8" required></th>
+            </tr>
+            <tr>
+                <th><strong>Contrasenya</strong><input type="password" id="pass" required></th>
+            </tr>
+            <tr>
+                <th><strong>Contrasenya</strong><input type="password" id="pass" required></th>
+            </tr>
+            <tr>
+                <th><strong>E-Mail</strong><input type="email" required></th>
+            </tr>
+            <tr>
+                <th><strong>Arxiu</strong><input type="text" required></th>
+            </tr>
+            <tr>
+                <th><input type="file" value="seleccionar arxivo"></th>
+            </tr>
+            <tr>
+                <th><strong>Imatge</strong></th>
+            </tr>
+            <tr>
+                <th>><input type="file" value="seleccionar imagen"></th>
+            </tr>
+            <tr>
+                <th align="center">El tamany de l'arxiu i la imatge no por execir els 4 KBytes</th>
+            </tr>
+            <tr>
+                <th><strong>Quins jocs t'interessen?</strong></th>
+            </tr>
+            <tr>    
+                <td align="left"><input type="checkbox">Super Smash Bros Ultimate</td>
+            </tr>
+            <tr>
+                <td align="left"><input type="checkbox">Minecraft</td>
+            </tr>
+            <tr>
+                <td align="left"><input type="checkbox">The legend of zelda</td>
+            </tr>
+            <tr>    
+                <td align="left"><input type="checkbox">Pokémon Espada</td>
+            </tr>
+            <tr>
+                <th><strong>Requereixo resposta</strong><input type="radio" name="Si"><input type="radio" name="No"></th>
+            </tr>
+            <tr>
+                <th align="center"><strong>Missatge</strong></th>
+            </tr>
+            <tr>
+                <th align="center"><textarea></textarea></th>
+            </tr>
+        </form>
+        </table>  
+    </body>
+</html>

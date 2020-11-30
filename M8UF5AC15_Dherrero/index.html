@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cat">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulari 1 d'enregistrament</title>
+    </head>
+    <body>
+        <h1>Formulari bàsic de registre</h1>
+        <form method="GET">
+        <label><p>Nom <input type="text" maxlength="50" name="nom" required></p></label>
+        <label><p>Cognom <input type="text" maxlength="50" name="cognom" required></p></label>
+        <label><p>Sexe:
+        <input type="radio" name="hm" value="h" required> Home
+        <input type="radio" name="hm" value="m" required> Dona
+        </p></label>
+        <label><p>Correu electrònic <input type="text" maxlength="50" name="correu" required></p></label>
+        <label><select name="Població">Població
+            <option selected>Població</option>
+            <option>Arbúcies</option>
+            <option>Badalona</option>
+            <option>Barcelona</option>
+            <option>Girona</option>
+            <option>Vilassar de Mar</option>
+        </select></label>
+    <label><p><input type="text" name="Descripcio">Descripció</p></label>
+    <label><p><input type="checkbox" name="Vull rebre informació sobre novetats i ofertes" required checked> Vull rebre informació sobre novetats i ofertes</p></label>
+    <label><p><input type="checkbox" name="Declaro haver llegit i acceptar les condicions generals del programa i la normativa sobre protecció de dades indicada al RGPD"> "Declaro haver llegit i acceptar les  condicions generals del programa i la normativa sobre protecció de dades indicada
+    al RGPD</p></label>
+    <label><p><input type="submit" value="Enviar"></p></label>
+    </form>
+    </body>
+</html>
